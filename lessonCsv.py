@@ -32,6 +32,6 @@ html = f"""
   </body>
 </html>
 """
-#st.markdown(html, unsafe_allow_html=True)
+st.markdown(html, unsafe_allow_html=True)
 #Maneiras de inserir CSS externo no streamlit.
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
