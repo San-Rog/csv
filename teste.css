@@ -17,6 +17,7 @@ h1, h3 {
   outline-offset: 15px;
   text-decoration-line: overline underline;
   text-decoration-color: yellow;
+  text-decoration-style: dashed;
 }
 
 p {
