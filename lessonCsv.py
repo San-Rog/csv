@@ -5,7 +5,7 @@ testeOne = st.button('Início')
 with open('teste.css') as f:
     css = f.read()
 
-html = """
+html = f"""
 <hmtl>
   <head>
     <h3>Meu primeiro exemplo</h3>
@@ -14,8 +14,7 @@ html = """
   </head>
   <body>    
     <p class="center">This paragraph refers to two classes.</p>
-    <p class="bott">f"{testeOne}"</p>
-    
+    <p class="bott">{testeOne}</p>    
     <p id="para1">Hello World - SOFREMOS TODAS AS DORES DO MUNDO!</p>
     <h1>My First CSS Example</h1>
     <p>Sempre ganharemos a batalha.</p>
