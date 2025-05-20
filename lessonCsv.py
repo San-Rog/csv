@@ -9,7 +9,7 @@ with colOne:
 with colTwo: 
     st.text('colTwo')
     st.button('Fim')
-    st.selectbox('Escolha Two', [5, 6]) 
+st.selectbox('Escolha Two', [5, 6]) 
 with open('teste.css') as f:
     css = f.read()
 
