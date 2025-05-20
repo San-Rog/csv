@@ -107,3 +107,23 @@ h4, h5 {
   text-shadow: 2px 2px 5px red;
   font-style: italic;
 }
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
