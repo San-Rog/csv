@@ -37,6 +37,13 @@ p.center {
   opacity: 0.8;
 }
 
+p.img {
+  text-align: center;
+  background-color:rgb(240, 240, 240); 
+  opacity: 0.8;
+  background-image: url("img.jpg");
+}
+
 /*seletor de agrupamento: usado para elementos HMTL que tenham as mesmas propriedades.*/
 h4, h5 {
   text-align: left;
