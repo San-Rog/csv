@@ -34,8 +34,8 @@ p {
 p.center {
   text-align: center;
   color:Tomato;
-  font-size:60px;
-  background-color:rgb(240, 240, 240); 
+  font-size:12px;
+  /*background-color:rgb(240, 240, 240);*/ 
   opacity: 0.8;
 }
 
