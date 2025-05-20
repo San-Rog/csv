@@ -15,6 +15,7 @@ h1, h3 {
   outline-color: red;
   outline-width: 4px;
   outline-offset: 15px;
+  text-decoration-line: overline underline;
 }
 
 p {
