@@ -14,6 +14,7 @@ h1, h3 {
   outline-style: solid;
   outline-color: red;
   outline-width: 4px;
+  outline-offset: 15px;
 }
 
 p {
