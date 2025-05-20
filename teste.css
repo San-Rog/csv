@@ -98,4 +98,5 @@ h4, h5 {
   padding-left: 80px;
   text-decoration-line: overline;
   text-transform: lowercase;
+  word-spacing: 10px;
 }
