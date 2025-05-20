@@ -5,9 +5,11 @@ colOne, colTwo = st.columns(2)
 with colOne:
     st.text('colOne')
     st.button('Início')
+    st.selectbox('Escolha One', [0, 1, 2, 4])    
 with colTwo: 
     st.text('colTwo')
     st.button('Fim')
+    st.selectbox('Escolha One', [0, 1, 2, 4]) 
 with open('teste.css') as f:
     css = f.read()
 
