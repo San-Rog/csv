@@ -14,6 +14,7 @@ html = f"""
   </head>
   <body>    
     <p class="center">This paragraph refers to two classes.</p>
+    <p class="img">Imagem de fundo.</p>
     <p id="para1">Hello World - SOFREMOS TODAS AS DORES DO MUNDO!</p>
     <h1>My First CSS Example</h1>
     <p>Sempre ganharemos a batalha.</p>
