@@ -71,6 +71,7 @@ p.ocup {
   color: white; 
   text-align: justify;
   vertical-align: baseline;
+  text-decoration-line: underline;
 }
   
 /*seletor de agrupamento: usado para elementos HMTL que tenham as mesmas propriedades.*/
@@ -85,4 +86,5 @@ h4, h5 {
   padding-right: 30px;
   padding-bottom: 50px;
   padding-left: 80px;
+  text-decoration-line: overline;
 }
