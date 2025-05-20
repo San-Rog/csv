@@ -1,4 +1,4 @@
-rbody {
+body {
   background-color: red;
   border-style: double;
 }
@@ -80,6 +80,7 @@ p.ocup {
   vertical-align: baseline;
   text-decoration-line: underline;
   text-transform: capitalize;
+  letter-spacing: 5px;
 }
   
 /*seletor de agrupamento: usado para elementos HMTL que tenham as mesmas propriedades.*/
