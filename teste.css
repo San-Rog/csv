@@ -21,6 +21,7 @@ h1, h3 {
   text-decoration-style: dashed;
   text-decoration-thickness: 5px;
   text-decoration: underline red double;
+  text-indent: 50px;
 }
 
 p {
