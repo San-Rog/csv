@@ -69,6 +69,8 @@ p.ocup {
   width: 50%;
   background-color: powderblue;
   color: white; 
+  text-align: justify;
+  vertical-align: baseline;
 }
   
 /*seletor de agrupamento: usado para elementos HMTL que tenham as mesmas propriedades.*/
