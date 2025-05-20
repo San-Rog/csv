@@ -103,5 +103,5 @@ h4, h5 {
   text-transform: lowercase;
   word-spacing: 80px;
   text-shadow: 2px 2px 5px red;
-  font-family: "Lucida Console", "Brush Script MT", cursive;
+  font-family: Brush Script MT, cursive;
 }
