@@ -22,8 +22,8 @@ html = f"""
     <h5>Meu primeiro exemplo</h5>
   </head>
   <body>
+    <div>Ocupação de espaço na tela.</div>
     <p class="center">This paragraph refers to two classes.</p>
-    <p class="title">Ocupação de espaço na tela.</p>
     <p class="img">Imagem de fundo sdfsdfsdfsdfsdfsdf.</p>
     <p id="para1">Hello World - SOFREMOS TODAS AS DORES DO MUNDO!</p>
     <h1>My First CSS Example</h1>
