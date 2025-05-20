@@ -44,7 +44,8 @@ p.centerButt {
   text-align: center;
   background-color:rgb(240, 240, 240); 
   opacity: 0.8;
-  border-style: inset;
+  border-style: dotted;
+  border-width: 4px;
   color:green;
 }
 
