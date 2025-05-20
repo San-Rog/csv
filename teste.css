@@ -29,6 +29,7 @@ p {
   font-size:34px;
   lightness: hsl(0, 100%, 90%);
   border-style: groove;
+  border-color: red;
 }
 
 /*seletores de classe*/
