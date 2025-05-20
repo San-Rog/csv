@@ -6,6 +6,7 @@ rbody {
 /*seletores */
 h1, h3 {
   text-align: left;
+  text-transform: uppercase;
   font-family: times;
   font-size:12px;
   color: white;
@@ -77,6 +78,7 @@ p.ocup {
   text-align: justify;
   vertical-align: baseline;
   text-decoration-line: underline;
+  text-transform: capitalize;
 }
   
 /*seletor de agrupamento: usado para elementos HMTL que tenham as mesmas propriedades.*/
@@ -92,4 +94,5 @@ h4, h5 {
   padding-bottom: 50px;
   padding-left: 80px;
   text-decoration-line: overline;
+  text-transform: lowercase;
 }
