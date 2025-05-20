@@ -15,12 +15,6 @@ h1, h3 {
   border-style: outset;
 }
 
-div {
-  height: 200px;
-  width: 10%;
-  background-color: powderblue;
-}
-
 p {
   text-align: right;
   font-family: verdana;
