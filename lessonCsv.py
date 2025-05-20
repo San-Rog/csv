@@ -10,7 +10,7 @@ with colTwo:
     st.text('colTwo')
     st.button('Fim')
     text = st.markdown("<p class='center'>This paragraph refers to two classes.</p>", unsafe_allow_html=True)
-    st.selectbox("<p class='center'>This paragraph refers to two classes.</p>", [5, 6]) 
+    st.selectbox(None, [5, 6]) 
 with open('teste.css') as f:
     css = f.read()
 
