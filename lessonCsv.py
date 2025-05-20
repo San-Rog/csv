@@ -19,6 +19,7 @@ html = """
 </html>
 """
 st.write([2, 4, 5])
+st.button('teste')
 st.markdown(html, unsafe_allow_html=True)
 #Maneiras de inserir CSS externo no streamlit.
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
