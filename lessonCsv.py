@@ -12,7 +12,8 @@ html = f"""
     <h4>Meu primeiro exemplo</h4>
     <h5>Meu primeiro exemplo</h5>
   </head>
-  <body>    
+  <body>
+    background-image: url("img.jpg");
     <p class="center">This paragraph refers to two classes.</p>
     <p class="img">Imagem de fundo sdfsdfsdfsdfsdfsdf.</p>
     <p id="para1">Hello World - SOFREMOS TODAS AS DORES DO MUNDO!</p>
