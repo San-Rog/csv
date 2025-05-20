@@ -3,7 +3,8 @@ import streamlit as st
 st.write([2, 4, 5])
 colOne, colTwo = st.columns(2)
 with colOne:
-    st.markdown("<p class='centerButt'>Botão A.</p>", unsafe_allow_html=True)
+    text = st.markdown("<p class='centerButt'>Botão A.</p>", unsafe_allow_html=True)
+    st.write(text)
     st.button('Botão A')
     st.selectbox('Escolha One', [0, 1, 2, 4])    
 with colTwo: 
