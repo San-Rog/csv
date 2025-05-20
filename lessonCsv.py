@@ -4,7 +4,7 @@ st.write([2, 4, 5])
 colOne, colTwo = st.columns(2)
 with colOne:
     st.markdown("<p class='centerButt'>Botão A.</p>", unsafe_allow_html=True)
-    st.button('Início')
+    st.button(st.markdown("<p class='centerButt'>Botão A.</p>", unsafe_allow_html=True))
     st.selectbox('Escolha One', [0, 1, 2, 4])    
 with colTwo: 
     st.markdown("<p class='centerButt'>Botão B.</p>", unsafe_allow_html=True)
