@@ -30,6 +30,10 @@ p {
   lightness: hsl(0, 100%, 90%);
   border-style: groove;
   border-color: red;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
 }
 
 /*seletores de classe*/
@@ -55,12 +59,14 @@ p.centerButt {
   margin-bottom: 100px;
   margin-right: 150px;
   margin-left: 80px;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px;
 }
 
+p.title {
+  height: 100px;
+  width: 500px;
+  background-color: powderblue;
+}
+  
 /*seletor de agrupamento: usado para elementos HMTL que tenham as mesmas propriedades.*/
 h4, h5 {
   text-align: left;
