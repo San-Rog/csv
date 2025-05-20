@@ -4,11 +4,11 @@ st.write([2, 4, 5])
 colOne, colTwo = st.columns(2)
 with colOne:
     st.markdown("<p class='centerButt'>Botão A.</p>", unsafe_allow_html=True)
-    st.button(st.markdown("<p class='centerButt'>Botão A.</p>", unsafe_allow_html=True))
+    st.button(st.markdown('Botão A')
     st.selectbox('Escolha One', [0, 1, 2, 4])    
 with colTwo: 
     st.markdown("<p class='centerButt'>Botão B.</p>", unsafe_allow_html=True)
-    st.button('Fim')
+    st.button('Botão B')
     st.markdown("<p class='center'>This paragraph refers to two classes.</p>", unsafe_allow_html=True)
     st.selectbox('', [5, 6]) 
 with open('teste.css') as f:
