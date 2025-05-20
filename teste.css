@@ -33,6 +33,7 @@ p.center {
   color:Tomato;
   font-size:60px;
   background-color:rgb(240, 240, 240); 
+  opacity: 0.8;
 }
 
 /*seletor de agrupamento: usado para elementos HMTL que tenham as mesmas propriedades.*/
@@ -41,4 +42,5 @@ h4, h5 {
   color:blue;
   font-size:18px;  
   background-color: lightblue;
+  opacity: 0.3;
 }
