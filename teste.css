@@ -11,6 +11,7 @@ h1, h3 {
   color: navy;
   background-color:rgb(255, 99, 71);
   border-style: double;
+  border-width: 5px;
   border-style: outset;
 }
 
