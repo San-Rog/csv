@@ -9,7 +9,6 @@ h1, h3 {
   font-size:12px;
   color: navy;
   background-color:rgb(255, 99, 71);
-  background-image: url("img.jpg");
 }
 
 p {
@@ -26,6 +25,7 @@ p {
   color: yellow;
   font-size:34px;
   lightness: hsl(0, 100%, 90%);
+  background-image: url("img.jpg");
 }
 
 /*seletores de classe*/
