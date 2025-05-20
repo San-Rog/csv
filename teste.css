@@ -52,6 +52,7 @@ p.center {
   font-size:12px;
   /*background-color:rgb(240, 240, 240);*/ 
   opacity: 0.8;
+  font-family: "Lucida Console", "Courier New", cursive;
 }
 
 p.centerButt {
@@ -69,6 +70,7 @@ p.centerButt {
   margin-right: 150px;
   margin-left: 80px;
   outline-style: double;
+  font-family: "Times New Roman", Times, serif;
 }
 
 p.ocup {
@@ -82,6 +84,7 @@ p.ocup {
   text-transform: capitalize;
   letter-spacing: 5px;
   line-height: 0.8;
+  font-family: Arial, Helvetica, sans-serif;
 }
   
 /*seletor de agrupamento: usado para elementos HMTL que tenham as mesmas propriedades.*/
@@ -100,4 +103,5 @@ h4, h5 {
   text-transform: lowercase;
   word-spacing: 80px;
   text-shadow: 2px 2px 5px red;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
