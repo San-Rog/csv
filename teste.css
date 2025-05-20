@@ -81,6 +81,7 @@ p.ocup {
   text-decoration-line: underline;
   text-transform: capitalize;
   letter-spacing: 5px;
+  line-height: 0.8;
 }
   
 /*seletor de agrupamento: usado para elementos HMTL que tenham as mesmas propriedades.*/
