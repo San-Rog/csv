@@ -49,6 +49,7 @@ p.centerButt {
   border-right-style: solid;
   border-bottom-style: dotted;
   border-left-style: solid;
+  border-radius: 12px;
   color:green;
 }
 
