@@ -55,6 +55,10 @@ p.centerButt {
   margin-bottom: 100px;
   margin-right: 150px;
   margin-left: 80px;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
 }
 
 /*seletor de agrupamento: usado para elementos HMTL que tenham as mesmas propriedades.*/
