@@ -6,7 +6,7 @@ with colOne:
     text = st.markdown("<p class='centerButt'>Botão A.</p>", unsafe_allow_html=True)
     st.button('Botão A')
     st.selectbox('Escolha One', [0, 1, 2, 4])    
-    st.markdown("<a href='https://www.streamlit.io'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://www.streamlit.io'>Site XYZ</a>", unsafe_allow_html=True)
 with colTwo: 
     st.markdown("<p class='centerButt'>Botão B.</p>", unsafe_allow_html=True)
     st.button('Botão B')
