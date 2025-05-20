@@ -1,7 +1,13 @@
 import streamlit as st
 
-testeOne = st.button('Início')
-
+st.write([2, 4, 5])
+colOne, colTwo = st.columns(2)
+with colOne:
+    st.text('colOne')
+    st.button('Início')
+with colTwo: 
+    st.text('colTwo')
+    st.button('Fim')
 with open('teste.css') as f:
     css = f.read()
 
@@ -21,8 +27,6 @@ html = f"""
   </body>
 </html>
 """
-st.write([2, 4, 5])
-st.button('teste')
 st.markdown(html, unsafe_allow_html=True)
 #Maneiras de inserir CSS externo no streamlit.
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
