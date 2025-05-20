@@ -3,7 +3,7 @@ body {
 }
 
 /*seletores */
-h1 {
+h1, h3 {
   text-align: left;
   font-family: times;
   font-size:12px;
@@ -36,7 +36,7 @@ p.center {
 }
 
 /*seletor de agrupamento: usado para elementos HMTL que tenham as mesmas propriedades.*/
-h3, h4, h5 {
+h4, h5 {
   text-align: left;
   color:blue;
   font-size:18px;  
