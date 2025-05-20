@@ -5,6 +5,9 @@ with open('teste.css') as f:
 
 html = """
 <hmtl>
+  <head>
+
+  </head>
   <body>
     <p class="center">This paragraph refers to two classes.</p>
     <p id="para1">Hello World - SOFREMOS TODAS AS DORES DO MUNDO!</p>
