@@ -12,8 +12,10 @@ html = """
     <h4>Meu primeiro exemplo</h4>
     <h5>Meu primeiro exemplo</h5>
   </head>
-  <body>
+  <body>    
     <p class="center">This paragraph refers to two classes.</p>
+    <p class="bott">{testeOne}</p>
+    
     <p id="para1">Hello World - SOFREMOS TODAS AS DORES DO MUNDO!</p>
     <h1>My First CSS Example</h1>
     <p>Sempre ganharemos a batalha.</p>
