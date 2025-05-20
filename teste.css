@@ -19,7 +19,7 @@ p {
   font-family: verdana;
   font-size: 20px;
   color: black;
-  border-style: double;
+  background-color:rgb(255, 99, 71);
 }
 
 /*seletores de id*/
