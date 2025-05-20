@@ -3,13 +3,13 @@ import streamlit as st
 st.write([2, 4, 5])
 colOne, colTwo = st.columns(2)
 with colOne:
-    st.text('colOne')
+    st.markdown("<p class='centerButt'>Botão A.</p>", unsafe_allow_html=True)
     st.button('Início')
     st.selectbox('Escolha One', [0, 1, 2, 4])    
 with colTwo: 
-    st.text('colTwo')
+    st.markdown("<p class='centerButt'>Botão B.</p>", unsafe_allow_html=True)
     st.button('Fim')
-    text = st.markdown("<p class='center'>This paragraph refers to two classes.</p>", unsafe_allow_html=True)
+    st.markdown("<p class='center'>This paragraph refers to two classes.</p>", unsafe_allow_html=True)
     st.selectbox('', [5, 6]) 
 with open('teste.css') as f:
     css = f.read()
