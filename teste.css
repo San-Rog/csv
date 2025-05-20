@@ -73,7 +73,7 @@ p.ocup {
 /*seletor de agrupamento: usado para elementos HMTL que tenham as mesmas propriedades.*/
 h4, h5 {
   text-align: left;
-  color:blue;
+  color: white;
   font-size:18px;  
   background-color: lightblue;
   opacity: 0.3;
