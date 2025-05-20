@@ -1,4 +1,4 @@
-body {
+rbody {
   background-color: red;
   border-style: double;
 }
@@ -39,11 +39,12 @@ p.center {
   opacity: 0.8;
 }
 
-p.img {
+p.centerButt {
   text-align: center;
   background-color:rgb(240, 240, 240); 
   opacity: 0.8;
   border-style: inset;
+  color:green;
 }
 
 /*seletor de agrupamento: usado para elementos HMTL que tenham as mesmas propriedades.*/
