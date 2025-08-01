@@ -51,8 +51,8 @@ progExe = [
 try:
     result = subprocess.run(
             progExe,
-            capture_output=True, # Capture stdout and stderr
-            text=True, # Decode output as text
-            check=True # Raise CalledProcessError if the command returns a non-zero exit code
+            capture_output=True, 
+            text=True, 
+            check=True)
 except Exception as error:
     st.text(error)
