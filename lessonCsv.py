@@ -48,4 +48,17 @@ progExe = [
         "-o", "output.jpg", # Output file
         'teste_pdf.pdf' # Input file
 ]
-
+try:
+    result = subprocess.run(
+            ghostscript_command,
+            capture_output=True, # Capture stdout and stderr
+            text=True, # Decode output as text
+            check=True # Raise CalledProcessError if the command returns a non-zero exit code
+    )
+    st.text("Ghostscript output:", result.stdout)
+    st.text("Ghostscript errors (if any):", result.stderr)
+except subprocess.CalledProcessError as e:
+    st.text(f"Error running Ghostscript: {e}")
+    st.text("Error output:", e.stderr)
+except FileNotFoundError:
+    st.text("Error: Ghostscript executable not found. Make sure it's installed and in your system's PATH.")
