@@ -44,10 +44,6 @@ newFile = 'teste_pdf'
 progExe = 'gswin64.exe'
 SW_HIDE = 0
 subprocess.call([progExe,
-                '-dSAFE',
-                 '-dBATCH',
-                 '-dNOPAUSE',
-                 '-sDEVICE=png16m',                        
                  '-r' + str(100),
                  '-dTextAlphaBits=2',
                  '-dAlignToPixels=0', 
