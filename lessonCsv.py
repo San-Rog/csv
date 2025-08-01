@@ -43,5 +43,5 @@ filePdf = 'teste_pdf.pdf'
 newFile = 'teste_pdf'
 progExe = 'gswin64.exe'
 SW_HIDE = 0
-subprocess.run()
+subprocess.call([progExe, ""])
 
