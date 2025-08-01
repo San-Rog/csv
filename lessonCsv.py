@@ -40,7 +40,7 @@ st.markdown(html, unsafe_allow_html=True)
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 #st.write(os.getcwd())
 filePdf = 'teste_pdf.pdf'
-newFile = 'teste_pdf.jpg'
+newFile = 'teste_pdf'
 progExe = 'gswin64.exe'
 SW_HIDE = 0
 subprocess.call([progExe,
@@ -52,6 +52,6 @@ subprocess.call([progExe,
                  '-dTextAlphaBits=2',
                  '-dAlignToPixels=0', 
                  '-dGraphicsAlphaBits=2', 
-                 '-sOutputFile= newFile, 
+                 '-sOutputFile=%04d_' + newFile + '.jpg', 
                  filePdf])
 
