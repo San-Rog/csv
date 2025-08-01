@@ -50,7 +50,7 @@ progExe = [
 ]
 try:
     result = subprocess.run(
-            ghostscript_command,
+            progExe,
             capture_output=True, # Capture stdout and stderr
             text=True, # Decode output as text
             check=True # Raise CalledProcessError if the command returns a non-zero exit code
