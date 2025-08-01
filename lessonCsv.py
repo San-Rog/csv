@@ -44,8 +44,9 @@ st.write(dirNow)
 st.write(os.listdir(dirNow))
 filePdf = 'teste_pdf.pdf'
 newFile = 'teste_pdf.jpg'
+fileGs = os.path.join(dirNow, 'gswin64c.exe')
 progExe = [
-        "gswin64c.exe",  # Or "gswin64c.exe" on Windows
+        fileGs,  # Or "gswin64c.exe" on Windows
         "-sDEVICE=jpeg",
         "-r300",  # Resolution
         "-o", newFile, # Output file
