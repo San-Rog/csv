@@ -43,9 +43,6 @@ filePdf = 'teste_pdf.pdf'
 newFile = 'teste_pdf'
 progExe = 'gswin64.exe'
 SW_HIDE = 0
-info = subprocess.STARTUPINFO()
-info.dwFlags = subprocess.STARTF_USESHOWWINDOW
-info.wShowWindow = SW_HIDE       
 subprocess.call([progExe,
                 '-dSAFE',
                  '-dBATCH',
@@ -56,5 +53,5 @@ subprocess.call([progExe,
                  '-dAlignToPixels=0', 
                  '-dGraphicsAlphaBits=2', 
                  '-sOutputFile=%04d_' + newFile + '.jpg', 
-                 filePdf], startupinfo=info)
+                 filePdf])
 
