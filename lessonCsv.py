@@ -46,7 +46,7 @@ filePdf = 'teste_pdf.pdf'
 newFile = 'teste_pdf.jpg'
 fileGs = os.path.join(dirNow, 'gswin64c.exe')
 progExe = [
-        fileGs,  # Or "gswin64c.exe" on Windows
+        "gs",  # Or "gswin64c.exe" on Windows
         "-sDEVICE=jpeg",
         "-r300",  # Resolution
         "-o", newFile, # Output file
