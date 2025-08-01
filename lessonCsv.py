@@ -41,7 +41,11 @@ st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 #st.write(os.getcwd())
 filePdf = 'teste_pdf.pdf'
 newFile = 'teste_pdf'
-progExe = 'gswin64.exe'
-SW_HIDE = 0
-subprocess.call([progExe, ""])
+progExe = [
+        "'gswin64.exe",  # Or "gswin64c.exe" on Windows
+        "-sDEVICE=jpeg",
+        "-r300",  # Resolution
+        "-o", "output.jpg", # Output file
+        'teste_pdf.pdf' # Input file
+]
 
