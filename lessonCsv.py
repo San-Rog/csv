@@ -42,7 +42,7 @@ st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 filePdf = 'teste_pdf.pdf'
 newFile = 'teste_pdf'
 progExe = [
-        "'gswin64.exe",  # Or "gswin64c.exe" on Windows
+        "gswin64.exe",  # Or "gswin64c.exe" on Windows
         "-sDEVICE=jpeg",
         "-r300",  # Resolution
         "-o", "output.jpg", # Output file
