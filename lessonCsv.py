@@ -39,4 +39,20 @@ st.markdown(html, unsafe_allow_html=True)
 #Maneiras de inserir CSS externo no streamlit.
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 #st.write(os.getcwd())
+progExe = dirBin + '\\gswin64.exe'
+SW_HIDE = 0
+info = subprocess.STARTUPINFO()
+info.dwFlags = subprocess.STARTF_USESHOWWINDOW
+info.wShowWindow = SW_HIDE       
+subprocess.call([progExe,
+                '-dSAFE',
+                 '-dBATCH',
+                 '-dNOPAUSE',
+                 '-sDEVICE=png16m',                        
+                 '-r' + str(resoArq),
+                 '-dTextAlphaBits=2',
+                 '-dAlignToPixels=0', 
+                 '-dGraphicsAlphaBits=2', 
+                 '-sOutputFile=%04d_' + prefArq + '.jpg', 
+                 arqY], startupinfo=info)
 
