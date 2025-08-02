@@ -46,7 +46,7 @@ filePdf = 'teste_pdf.pdf'
 newFile = 'teste_pdf.jpg'
 fileGs = os.path.join(dirNow, 'gswin64c.exe')
 progExe = [
-        "gs",  # Or "gswin64c.exe" on Windows
+        fileGs, 
         "-sDEVICE=jpeg",
         "-r300",  # Resolution
         "-o", newFile, # Output file
@@ -60,3 +60,4 @@ try:
             check=True)
 except Exception as error:
     st.text(error)
+
