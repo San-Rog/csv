@@ -44,7 +44,7 @@ st.write(dirNow)
 st.write(os.listdir(dirNow))
 filePdf = 'teste_pdf.pdf'
 newFile = 'teste_pdf.jpg'
-fileGs = os.path.join(dirNow, 'gswin64c.exe')
+fileGs = os.path.join(dirNow, 'gswin64c')
 progExe = [
         fileGs, 
         "-sDEVICE=jpeg",
@@ -60,6 +60,7 @@ try:
             check=True)
 except Exception as error:
     st.text(error)
+
 
 
 
