@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 import subprocess
+import ghostscript
 
 st.write([2, 4, 5])
 colOne, colTwo = st.columns(2)
@@ -60,4 +61,5 @@ try:
             check=True)
 except Exception as error:
     st.text(error)
+
 
