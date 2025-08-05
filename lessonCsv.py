@@ -49,6 +49,7 @@ if uploaded_file is not None:
             )
     
     # Clean up temporary files
-    os.remove(temp_input_path)
-    if os.path.exists(temp_output_path):
-        os.remove(temp_output_path)
+    #os.remove(temp_input_path)
+    #if os.path.exists(temp_output_path):
+    #    os.remove(temp_output_path)
+
