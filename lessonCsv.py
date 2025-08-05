@@ -11,10 +11,11 @@ if uploadPdf is not None:
                 "gswin64c",  
                 "-sDEVICE=pdfwrite",
                 "-dCompatibilityLevel=1.4",
-                f"-dPDFSETTINGS={quality_setting}",
+                f"-dPDFSETTINGS={200}",
                 "-dNOPAUSE",
                 "-dBATCH",
                 "-sOutputFile=" + 'novo.pdf',
                 pdfName
             ]
     subprocess.run(command, check=True)
+
