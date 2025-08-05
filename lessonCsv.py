@@ -7,6 +7,7 @@ uploadPdf = st.file_uploader('Selecionar arquivos PDF',
                                      accept_multiple_files=False)
 if uploadPdf is not None:
     pdfName = uploadPdf.name
+    docPdf = pymupdf.open(stream=uploadPdf.read(), filetype="pdf")
     command = [
                 "gswin64c",  
                 "-sDEVICE=pdfwrite",
@@ -15,7 +16,8 @@ if uploadPdf is not None:
                 "-dNOPAUSE",
                 "-dBATCH",
                 "-sOutputFile=" + 'novo.pdf',
-                pdfName
+                docPdf
             ]
     subprocess.run(command, check=True)
+
 
