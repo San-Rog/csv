@@ -4,7 +4,7 @@ import os
 import pymupdf
 
 command = [
-                "gswin64c.exe",  
+                "gswin64c",  
                 "-sDEVICE=pdfwrite",
                 "-dCompatibilityLevel=1.4",
                 f"-dPDFSETTINGS={200}",
@@ -14,6 +14,7 @@ command = [
                 'file.pdf'
             ]
 subprocess.run(command, check=True)
+
 
 
 
