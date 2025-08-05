@@ -1,67 +1,54 @@
 import streamlit as st
-import os
 import subprocess
+import os
 
-st.write([2, 4, 5])
-colOne, colTwo = st.columns(2)
-with colOne:
-    text = st.markdown("<p class='centerButt'>Botão A.</p>", unsafe_allow_html=True)
-    st.button('Botão A')
-    st.selectbox('Escolha One', [0, 1, 2, 4])    
-    st.markdown("<a href='https://www.streamlit.io'>Site XYZ</a>", unsafe_allow_html=True)
-with colTwo: 
-    st.markdown("<p class='centerButt'>Botão B.</p>", unsafe_allow_html=True)
-    st.button('Botão B')
-    st.markdown("<p class='center'>This paragraph refers to two classes.</p>", unsafe_allow_html=True)
-    st.selectbox('', [5, 6]) 
-with open('teste.css') as f:
-    css = f.read()
+# Ensure Ghostscript is installed and in PATH
+def compress_pdf(input_path, output_path, quality_setting="/screen"):
+    """Compresses a PDF using Ghostscript."""
+    try:
+        command = [
+            "gswin64c",  
+            "-sDEVICE=pdfwrite",
+            "-dCompatibilityLevel=1.4",
+            f"-dPDFSETTINGS={quality_setting}",
+            "-dNOPAUSE",
+            "-dBATCH",
+            "-sOutputFile=" + output_path,
+            input_path
+        ]
+        subprocess.run(command, check=True)
+        return True
+    except subprocess.CalledProcessError as e:
+        st.error(f"Error compressing PDF: {e}")
+        return False
 
-html = f"""
-<hmtl>
-  <head>
-    <h3>Meu primeiro exemplo</h3>
-    <h4>Meu primeiro exemplo</h4>
-    <h5>Meu primeiro exemplo</h5>
-  </head>
-  <body>
-    <div>Divisão ocupando espaço na tela</div>
-    <p class="ocup">Ocupação de espaço com altura e largura predefinidos.</p>
-    <p class="center">This paragraph refers to two classes.</p>
-    <p class="img">Imagem de fundo sdfsdfsdfsdfsdfsdf.</p>
-    <p id="para1">Hello World - SOFREMOS TODAS AS DORES DO MUNDO!</p>
-    <h1>My First CSS Example</h1>
-    <p>Sempre ganharemos a batalha.</p>
-  </body>
-</html>
-"""
-st.markdown(html, unsafe_allow_html=True)
-#Maneiras de inserir CSS externo no streamlit.
-st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
-#st.write(os.getcwd())
-dirNow = os.getcwd()
-st.write(dirNow)
-st.write(os.listdir(dirNow))
-filePdf = 'teste_pdf.pdf'
-newFile = 'teste_pdf.jpg'
-fileGs = os.path.join(dirNow, 'gswin64.exe')
-progExe = [
-        fileGs, 
-        "-sDEVICE=jpeg",
-        "-r300",  # Resolution
-        "-o", newFile, # Output file
-        filePdf # Input file
-]
-try:
-    result = subprocess.run(
-            progExe,
-            capture_output=True, 
-            text=True, 
-            check=True)
-except Exception as error:
-    st.text(error)
+st.title("PDF Compressor with Ghostscript")
 
+uploaded_file = st.file_uploader("Upload a PDF file", type=["pdf"])
 
+if uploaded_file is not None:
+    # Save uploaded file temporarily
+    temp_input_path = os.path.join("temp", uploaded_file.name)
+    os.makedirs("temp", exist_ok=True)
+    with open(temp_input_path, "wb") as f:
+        f.write(uploaded_file.getbuffer())
 
+    st.write(f"Uploaded: {uploaded_file.name}")
 
+    output_filename = f"compressed_{uploaded_file.name}"
+    temp_output_path = os.path.join("temp", output_filename)
 
+    if compress_pdf(temp_input_path, temp_output_path):
+        st.success("PDF compressed successfully!")
+        with open(temp_output_path, "rb") as f:
+            st.download_button(
+                label="Download Compressed PDF",
+                data=f.read(),
+                file_name=output_filename,
+                mime="application/pdf"
+            )
+    
+    # Clean up temporary files
+    os.remove(temp_input_path)
+    if os.path.exists(temp_output_path):
+        os.remove(temp_output_path)
