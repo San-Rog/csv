@@ -1,6 +1,7 @@
 import streamlit as st
 import subprocess
 import os
+import pymupdf
 
 uploadPdf = st.file_uploader('Selecionar arquivos PDF', 
                                      type=['pdf'], 
@@ -19,5 +20,6 @@ if uploadPdf is not None:
                 docPdf
             ]
     subprocess.run(command, check=True)
+
 
 
